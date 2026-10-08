@@ -1,0 +1,22 @@
+.app-layout {
+  display: flex;
+  height: 100vh; /* full screen height */
+}
+
+.sidebar {
+  width: 300px; /* fixed width for CreatePost */
+  background: #f8f9fa;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  position: sticky;
+  top: 0; /* keep it fixed while scrolling */
+  height: 100vh;
+  overflow-y: auto; /* if form grows big */
+}
+
+.content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto; /* make posts scrollable */
+  background: #fff;
+}
